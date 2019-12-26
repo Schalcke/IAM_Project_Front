@@ -188,19 +188,24 @@ $('#submtQuiz').click(
 );
 
 // Stylise Icone cercle onClick input
-$("input").click(
-  function() {
-    if(this.name = true) {
-      var elmt = this.parentNode;
-      var element_r1 = elmt.parentNode;
-      var element_r2 = element_r1.parentNode;
-      var element_r3 = element_r2.parentNode;
-      var element_r4 = element_r3.parentNode;
-      $(element_r4).children('.status-intransit').css({'color': '#14601E'});
-      $(element_r4).css('border-left', 'none');
+function UX_Style(){
+  $("input").click(
+    function() {
+      if(this.name = true) {
+        var elmt = this.parentNode;
+        var element_r1 = elmt.parentNode;
+        var element_r2 = element_r1.parentNode;
+        var element_r3 = element_r2.parentNode;
+        var element_r4 = element_r3.parentNode;
+        $(element_r4).children('.status-intransit').css({'color': '#14601E'});
+        $(element_r4).css('border-left', 'none');
+      }
     }
-  }
-)
+  )
+}
+
+UX_Style();
+
 
 dt = new Date();
 dt.setDate(dt.getDate() + 1);
