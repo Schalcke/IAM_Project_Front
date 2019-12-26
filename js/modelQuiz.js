@@ -26,6 +26,7 @@ var pointMathLogique = 0;
 var pointCltrG = 0;
 var pointCmprEprvEcrt = 0;
 var score = 0;
+
 $('#submtQuiz').click(
     function() {
         // Math & Logique
@@ -183,282 +184,28 @@ $('#submtQuiz').click(
         $('#cltrGActl').append(pointCltrG + ' / 40Ponits');
         $('#fr').append(pointCmprEprvEcrt + ' / 10Ponits');
 
-    }
-
-    
+    } 
 );
 
 // Stylise Icone cercle onClick input
-
-$('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q1") {
-        $('#I1').css('color', '#14601E');
-        $('#TI1').css('border-left', 'none');
+$("input").click(
+  function() {
+    if(this.name = true) {
+      var elmt = this.parentNode;
+      var element_r1 = elmt.parentNode;
+      var element_r2 = element_r1.parentNode;
+      var element_r3 = element_r2.parentNode;
+      var element_r4 = element_r3.parentNode;
+      $(element_r4).children('.status-intransit').css({'color': '#14601E'});
+      $(element_r4).css('border-left', 'none');
     }
-  });
+  }
+)
 
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q2") {
-        $('#I2').css('color', '#14601E');
-        $('#TI2').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q3") {
-        $('#I3').css('color', '#14601E');
-        $('#TI3').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q4") {
-        $('#I4').css('color', '#14601E');
-        $('#TI4').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q5") {
-        $('#I5').css('color', '#14601E');
-        $('#TI5').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q6") {
-        $('#I6').css('color', '#14601E');
-        $('#TI6').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q7") {
-        $('#I7').css('color', '#14601E');
-        $('#TI7').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q8") {
-        $('#I8').css('color', '#14601E');
-        $('#TI8').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q9") {
-        $('#I9').css('color', '#14601E');
-        $('#TI9').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q10") {
-        $('#I10').css('color', '#14601E');
-        $('#TI10').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q11") {
-        $('#I11').css('color', '#14601E');
-        $('#TI11').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q12") {
-        $('#I12').css('color', '#14601E');
-        $('#TI12').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q13") {
-        $('#I13').css('color', '#14601E');
-        $('#TI13').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q14") {
-        $('#I14').css('color', '#14601E');
-        $('#TI14').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q15") {
-        $('#I15').css('color', '#14601E');
-        $('#TI15').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q16") {
-        $('#I16').css('color', '#14601E');
-        $('#TI16').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q17") {
-        $('#I17').css('color', '#14601E');
-        $('#TI17').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q18") {
-        $('#I18').css('color', '#14601E');
-        $('#TI18').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q19") {
-        $('#I19').css('color', '#14601E');
-        $('#TI19').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q20") {
-        $('#I20').css('color', '#14601E');
-        $('#TI20').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q21") {
-        $('#I21').css('color', '#14601E');
-        $('#TI21').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q22") {
-        $('#I22').css('color', '#14601E');
-        $('#TI22').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q23") {
-        $('#I23').css('color', '#14601E');
-        $('#TI23').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q24") {
-        $('#I24').css('color', '#14601E');
-        $('#TI24').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q25") {
-        $('#I25').css('color', '#14601E');
-        $('#TI25').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q26") {
-        $('#I26').css('color', '#14601E');
-        $('#TI26').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q27") {
-        $('#I27').css('color', '#14601E');
-        $('#TI27').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q28") {
-        $('#I28').css('color', '#14601E');
-        $('#TI28').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q29") {
-        $('#I29').css('color', '#14601E');
-        $('#TI29').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q30") {
-        $('#I30').css('color', '#14601E');
-        $('#TI30').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q31") {
-        $('#I31').css('color', '#14601E');
-        $('#TI31').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q32") {
-        $('#I32').css('color', '#14601E');
-        $('#TI32').css('border-left', 'none');
-    }
-  });
-
-  $('input:radio').click(function() { 
-    console.log($(this).attr('name')); 
-    if ($(this).attr('name') == "Q33") {
-        $('#I33').css('color', '#14601E');
-        $('#TI33').css('border-left', 'none');
-    }
-  });
-
-  dt = new Date();
+dt = new Date();
 dt.setDate(dt.getDate() + 1);
 var curr_min = dt.getMinutes();
 console.log(curr_min);
-
 
 /* 
 A chaque clique sur un input de meme name incrémente un nombre de 1
@@ -468,7 +215,7 @@ le nombre doit étre égale aux nombre de question
 */
 
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 31, 2019 18:00:00").getTime();// Update the count down every 1 second
+var countDownDate = new Date("Jan 20, 2020 18:00:00").getTime();// Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
