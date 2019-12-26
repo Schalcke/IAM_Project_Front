@@ -1,0 +1,684 @@
+* body{
+    font-family: 'Montserrat' ,serif;
+}
+
+/** Print quiz result **/
+@media screen {
+  .printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+      visibility:hidden;
+  }
+  .printSection, .printSection * {
+      visibility:visible;
+  }
+  .printSection {
+      position:absolute;
+      left:0;
+      top:0;
+  }
+}
+
+a{
+    color: #fff;
+    border: none;
+}
+
+a:hover{
+    color: #fff;
+    border: none;
+}
+
+.container-fluid img{
+    padding-top: 20px;
+}
+
+.register-form {
+    margin-top: 5%;
+}   
+
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #96f72f, #498b03);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #14601E;
+    color: #fff;
+    font-weight: 500;
+}
+
+.modal .modal-header {
+    position: relative;
+  }
+  .modal .modal-header .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .modal .modal-footer {
+    border-top: none;
+    padding: 10px
+  }
+  .modal .modal-footer .btn-group > .btn:first-child {
+    border-bottom-left-radius: 0;
+  }
+  .modal .modal-footer .btn-group > .btn:last-child {
+    border-top-right-radius: 0;
+  }
+
+  /* CHOIX FILIERES */
+.ds-btn li { 
+    list-style:none; 
+    float:left; 
+    padding:10px; 
+}
+
+.ds-btn li a span {
+    padding-left:15px;
+    padding-right:5px;
+    width:100%;
+    display:inline-block; 
+    text-align:left;
+}
+
+.ds-btn li a span small {
+    width:100%; 
+    display:inline-block; 
+    text-align:left;
+}
+
+/* FOOTER */
+a:hover{
+    text-decoration:none;
+}
+.section-padding {
+	padding: 60px 0;
+}
+
+.bottom .copyright {
+    color: #848488;
+    font-weight: 600;
+}
+.copyright a {
+    color: #822320;
+    margin-left: 3px;
+    padding-right: 3px;
+}
+.bottom p {
+    margin-bottom: 0;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.copyright p span {
+    color: #d1caca;
+}
+.bottom .copyright p, .bottom .copyright a:hover{
+    color: #6c6d83;
+}
+
+
+#boxChoseFLR{
+    margin-top: 5%;
+}
+
+#boxChoseFLR h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+#button{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: #14601E;
+  font-weight: 700;
+}
+span{
+  display: block;
+  padding: 25px 20px;
+}
+#button::before, #button::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #14601E;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #14601E;
+}
+#button:hover::before, #button:hover::after{
+  width: 100%;
+}
+#button:hover span::before, #button:hover span::after{
+  height: 100%;
+}
+/*----- #button 1 -----*/
+.btn-1::before, .btn-1::after{
+  transition-delay: 0.2s;
+}
+.btn-1 span::before, .btn-1 span::after{
+  transition-delay: 0s;
+}
+.btn-1::before{
+  right: 0;
+  top: 0;
+}
+.btn-1::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-1 span::before{
+  left: 0;
+  top: 0;
+}
+.btn-1 span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-1:hover::before, .btn-1:hover::after{
+  transition-delay: 0s;
+}
+.btn-1:hover span::before, .btn-1:hover span::after{
+  transition-delay: 0.2s;
+}
+
+/*--- #button 2 -------*/
+
+
+.btn-2::before, .btn-2::after{
+  transition-delay: 0s;
+}
+.btn-2 span::before, .btn-2 span::after{
+  transition-delay: 0.2s;
+}
+.btn-2::before{
+  right: 0;
+  top: 0;
+}
+.btn-2::after{
+  left: 0;
+  bottom: 0;
+}
+.btn-2 span::before{
+  left: 0;
+  top: 0;
+}
+.btn-2 span::after{
+  right: 0;
+  bottom: 0;
+}
+.btn-2:hover::before, .btn-2:hover::after{
+  transition-delay: 0.2s;
+}
+.btn-2:hover span::before, .btn-2:hover span::after{
+  transition-delay: 0s;
+}
+
+
+/*----- #button 3 -----*/
+.btn-3::after{
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.6s;
+}
+.btn-3 span::after{
+  transition-delay: 0.4s;
+  right: 0;
+  bottom: 0
+}
+.btn-3::before{
+  right: 0;
+  top: 0;
+  transition-delay: 0.2s;
+}
+.btn-3 span::before{
+  transition-delay: 0s;
+  left: 0;
+  top: 0;
+}
+
+.btn-3:hover::after{
+  transition-delay: 0s;
+}
+.btn-3:hover span::after{
+  transition-delay: 0.2s;
+}
+.btn-3:hover::before{
+  transition-delay: 0.4s;
+}
+.btn-3:hover span::before{
+  transition-delay: 0.6s;
+}
+
+/*----- #button 4 -----*/
+.btn-4::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4 span::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-4 span::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+/*----- #button 5 -----*/
+.btn-5::after{
+  left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-5 span::after{
+  right:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-5::before{
+  right: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-5 span::before{
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+
+/*----- #button 6 -----*/
+.btn-6::before{
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn-6::after{
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-6 span::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6 span::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn-6:hover::before, .btn-6:hover::after{
+  left: 0;
+}
+.btn-6:hover span::before, .btn-6:hover span::after{
+  top: 0;
+}
+
+
+/* QUIZ */
+
+.tracking-detail {
+    padding:3rem 0
+   }
+   #tracking {
+    margin-bottom: 5%;
+   }
+   [class*=tracking-status-] p {
+    margin:0;
+    font-size:18px;
+    color:#fff;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight: 600;
+   }
+   [class*=tracking-status-] {
+    padding:1.6rem 0
+   }
+   .tracking-list {
+    border-radius: 5px;
+    background-color: #fff;
+   }
+   .tracking-item {
+    border-left:1px solid #ddd;
+    position:relative;
+    padding:2rem 1.5rem .5rem 2.5rem;
+    font-size: 12px;
+    margin-left:3rem;
+    min-height:5rem
+   }
+   .tracking-item .list-group-item{
+     border: none;
+   }
+   .tracking-item:last-child {
+    padding-bottom:4rem
+   }
+   .tracking-item .tracking-date {
+    margin-bottom:.5rem
+   }
+   .tracking-item .tracking-date span {
+    color:#888;
+    font-size:75%;
+    padding-left:.5rem;
+    padding-top: 5px;
+   }
+   .tracking-item .tracking-content {
+    padding:.5rem .8rem;
+    background-color:#f4f4f4;
+    border-radius:.5rem
+   }
+   .tracking-item .tracking-content span {
+    display:block;
+    color:#888;
+    font-size:85%;
+   }
+   .tracking-item .tracking-icon {
+    line-height:2.6rem;
+    position:absolute;
+    left:-1.3rem;
+    width:2.6rem;
+    height:2.6rem;
+    text-align:center;
+    border-radius:50%;
+    font-size:1.1rem;
+    background-color:#fff;
+    color:#fff
+   }
+   .tracking-item .tracking-icon.status-intransit {
+    color:#ddd;
+    border:1px solid #14601E;
+    font-size:.6rem
+   }
+   @media(min-width:992px) {
+    .tracking-item {
+     margin-left:10rem
+    }
+    .tracking-item .tracking-date {
+     position:absolute;
+     left:-10rem;
+     width:7.5rem;
+     text-align:right
+    }
+    .tracking-item .tracking-date span {
+     display:block;
+     padding: 0px;
+    }
+    .tracking-item .tracking-content {
+     padding:0;
+     background-color:transparent
+    }
+   }
+
+   .list-group-item input{
+       margin-right: 10px;
+       padding-top: -3px;
+   }
+
+   .footerQuiz button{
+     float: left;
+     margin: 20px;
+   }
+
+
+   /* CHECHED BOX */
+
+   /* CSS REQUIRED */
+.state-icon {
+    left: -5px;
+}
+
+/* DEMO ONLY - REMOVES UNWANTED MARGIN */
+.well .list-group {
+    margin-bottom: 0px;
+}
+
+/* QUIZ HEADER */
+.offset {
+  margin-top: 0;
+  padding-top: 270px;
+  text-align: center;
+  transition: .3s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 30vh;
+  font-weight: bold;
+  text-align: center;
+/*  background-color: "#303432"; */
+  background: -webkit-linear-gradient(left, #4A9328, #14601E);  
+  transition: .3s;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.header.small {
+  height: 70px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.header.small ~ .offset {
+  padding-top: 140px;
+}
+.header.small .header_logo {
+  padding-top: 20px;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+}
+
+.header_logo{
+  margin: 0;
+  padding-top: 80px;
+  font-size: 50px;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+  transition: .3s;
+  color: #fff;
+}
+
+/* ANCRE TOP BTN */
+.video-play-button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  position: fixed;
+  bottom: 60px;
+  left: 5%;
+  border-radius: 30px;
+  z-index: 666;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 15px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 9px 24px 18px 28px;
+}
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: #14601E;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #14601E;
+  border-radius: 50%;
+  transition: all 200ms;
+  border: solid 4px #fff;
+}
+
+
+.video-play-button span {
+  /*
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 18px solid #fff;
+  border-top: 18px solid #fff;
+  border-bottom: 12px solid #fff;
+  */
+
+  display: block;
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes pulse-border {
+0% {
+  transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+  opacity: 1;
+}
+100% {
+  transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+  opacity: 0;
+}
+}
+
+
+
+
+/* Résult Page */
+#felicitation{
+  text-align: center;
+  color: #14601E;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+table{
+  border: none;}
+
+.table {
+  border-radius: 12px;
+}
+
+.table thead tr{
+  background: #14601E;
+  border: none;
+  color: #fff;
+  border: 1px solid #ddd;
+}
+
+.table thead tr th{
+  border: none;
+  text-align: center;
+  padding: 18px;
+  border: 1px solid #ddd;
+}
+
+
+.table {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.table tr td{
+  border: none;
+  border: 1px solid #ddd;
+}
+
+/* TIMER */
+.made-with-mk {
+  width: 40px;
+  height: 90px;
+  display: block;
+  position: fixed;
+  z-index: 555;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 30px;
+  color: #B20E10;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 28px;
+}
+
+.made-with-mk:hover{
+  color: #B20E10;
+}
+
+
+.made-with-mk #brand {
+  position: relative;
+  vertical-align: middle;
+  font-size: 28px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+

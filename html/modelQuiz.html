@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../asset/icones/IAM.png">
+	<link rel="icon" type="image/png" href="../asset/icones/IAM.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/modelQuiz.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,800i,900&display=swap" 
+            rel="stylesheet">
+
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <!------ Quiz header ---------->
+    <div class="header">
+        <h1 class="header_logo">Quiz licence 1</h1>
+        <div class="made-with-mk">
+			<p id="brand"> </p>
+        </div>
+        <p id="timer"></p>
+    </div>
+    <div class="offset">
+        <p></p>
+    </div>
+
+        <!--  Timer  -->
+        <a id="play-video" class="video-play-button" href="#"> 
+            <span class="" id="rbr" aria-hidden="true"></span>
+        </a>
+
+        <a id="" class="made-with-mk" href="#"> 
+            <span class="glyphicon glyphicon-arrow-up" id="brand" aria-hidden="true"></span>
+        </a>
+        
+    <div class="container">
+        <!--  Timer Fixe box  
+		<div class="made-with-mk">
+			<div id="brand">
+            </div>
+			<div class="made-with"></div>
+        </div>
+        -->
+
+        <div class="row" id="">
+             <div class="col-md-12 col-lg-12">
+         <div id="tracking-pre"></div>
+         <div id="tracking">
+            <div class="tracking-list">
+               <div class="tracking-item" id="TI1">
+                  <div class="tracking-icon status-intransit" id="I1">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 1<span>(3 points)</span></div>
+                  <div class="tracking-content">
+                      Un beignet au chocolat contient 9% de sucre. 
+                      Quel est le pourcentage de sucre contenu dans 6 beignets ?
+                      <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q1" id="r1" >a) 54%
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q1" id="r2" >b) 50%
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q1" id="r3" >c) 9%
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q1" id="r4" >d) 30%
+                                </label>
+                            </ul>
+                      </span>
+                    </div>
+                    <script>
+                        
+                    </script>
+               </div>
+               <div class="tracking-item" id="TI2">
+                  <div class="tracking-icon status-intransit" id="I2">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 2<span>(05 points)</span></div>
+                  <div class="tracking-content">
+                      Un escargot cherche à atteindre le sommet d’un poteau de 12 mètres ; 
+                      il monte de 3 mètres chaque jour, mais redescend de deux mètres chaque nuit. 
+                      Combien de temps lui faudra-t-il- pour atteindre le haut du poteau ?
+                      <span>
+                        <ul class="list-group checked-list-box">
+                            <label class="list-group-item">
+                                <input type="radio" name="Q2" id="r5" >a) 12 jours
+                            </label>
+                            <label class="list-group-item">
+                                <input type="radio" name="Q2"  id="r6">11jours
+                            </label>
+                            <label class="list-group-item">
+                                <input type="radio" name="Q2" id="r7" >c) 10 jours
+                            </label>
+                            <label class="list-group-item">
+                                <input type="radio" name="Q2" id="r8" >d) 9 jours
+                            </label>
+                        </ul>
+                      </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI3">
+                  <div class="tracking-icon status-intransit" id="I3">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 3<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Il fait 5°C de plus à DAKAR qu’à TOUBA. 
+                        Dans quel cas peut-on dire qu’il fait plus chaud à TOUBA qu’à DAKAR ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q3" id="r9">a) En aucun cas
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q3" id="r10">b) S'il fait dèjà assez chaud à Touba
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q3" id="r11">c) S’il fait 5° à DAKAR (donc 10° à TOUBA).
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI4">
+                  <div class="tracking-icon status-intransit" id="I4">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 4<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        1 Que signifie le concept de maïeutique
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q4" id="r12">a) l’art de faire monter la mayonnaise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q4" id="r13">b) l’art de savoir créer des mosaïques
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q4" id="r14">c) l’art de faire accoucher les esprits
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q4" id="r15">d) c’est un concept rattaché à Einstein.
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q4" id="r16">e) c’est une notion présente dans l’ouvrage intitulé le Banquet ?
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI5">
+                  <div class="tracking-icon status-intransit" id="I5">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w4.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 5<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        2 Parmi les pays suivants, lesquels ont pour chef d’Etat une femme
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q5" id="r17">a) L’Italie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q5" id="r18">b) Le Gabon
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q5" id="r19">c) Le Chili
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q5" id="r20">d) La Tunisie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q5" id="r21">e) La Tunisie
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI6">
+                  <div class="tracking-icon status-intransit" id="I6">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 6<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        3 Quelle est la capitale de la Corée du Nord ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q6" id="r21">a) Séoul
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q6" id="r22">b) Lhassa
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q6" id="r23">c) Pyongyang
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q6" id="r24">d) Phnom Penh
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q6" id="r25">e) Kuala Lumpur
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI7">
+                  <div class="tracking-icon status-intransit" id="I7">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 7<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Parmi les auteurs suivants, lequel a rédigé le Contrat social ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q7" id="r26">a) Descartes
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q7" id="r27">b) Lhassa
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q7" id="r28">c) Durkheim
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q7" id="r29">d) Rousseau
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q7" id="r30">e) Diop
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI8">
+                  <div class="tracking-icon status-intransit" id="I8">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 8<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Quel pays produit le plus grand nombre de films cinématographiques chaque année ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q8" id="r31">a) L’Inde
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q8" id="r32">b) La France
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q8" id="r33">c) Les Etats-Unis
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q8" id="r33">d) L’Italie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q8" id="r34">e) La Chine
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI9">
+                  <div class="tracking-icon status-intransit" id="I9">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 9<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Où se trouve le siège de l'UNESCO
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q9" id="r35">a) L’Inde
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q9" id="r36">b) Paris
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q9" id="r37">c) New York
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q9" id="r38">e) Abidjan
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI10">
+                  <div class="tracking-icon status-intransit" id="I10">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 10<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Quelle est la capitale du Pakistan ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q10" id="r39">a) Kaboul
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q10" id="r40">b) Islamabad
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q10" id="r41">c) Bakou
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q10" id="r42">d) Astana
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q10" id="r43">e) Dhaka
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI11">
+                  <div class="tracking-icon status-intransit" id="I11">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 11<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Comment s'appelle cette maladie infectieuse provoquée par le bacille de Koch ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q11" id="r44">a) La peste
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q11" id="r45">b) La tuberculose
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q11" id="r46">c) La poliomyélite
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q11" id="r47">d) La gale
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q11" id="r48">d) La rougeole 
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI12">
+                  <div class="tracking-icon status-intransit" id="I12">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 12<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Quel territoire est l’objet d’un vieux litige entre l’Inde et le Pakistan ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q12" id="r49">a) Le Bengale
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q12" id="r50">b) Le Rajasthan
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q12" id="r51">c) Le Cachemire
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q12" id="r52">d) Le Karnataka
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q12" id="r53">d) Le Baloutchistan
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI13">
+                  <div class="tracking-icon status-intransit" id="I13">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 13<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                        Quelle est la nationalité d’Antonio GUTERRES, actuel secrétaire général de l’O.N.U. ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q13" id="r54">a) Mexicaine
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q13" id="r55">b) Espagnole
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q13" id="r56">c) Portugaise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q13" id="r57">d) Française
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q13" id="r58">d) Brésilienne
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI14">
+                  <div class="tracking-icon status-intransit" id="I14">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 14<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Comment appelle-t-on un mot construit sur la base des lettres d'un autre mot ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q14" id="r59">a) Un synonyme
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q14" id="r60">b) Un lapsus
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q14" id="r61">c) Une anagramme
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q14" id="r62">d) Un antonyme
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q14" id="r63">d) Une répétition
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI15">
+                  <div class="tracking-icon status-intransit" id="I15">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 15<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Que signifie la lettre « D » dans l’indicateur « I.D.H » crée en 1990 dans le cadre 
+                    d’un programme des Nations Unies, le PNUD ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q15" id="r64">a) Dette
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q15" id="r65">b) Densité
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q15" id="r66">c) Développement
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q15" id="r67">d) Démographie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q15" id="r68">d) Délocalisation
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI16">
+                  <div class="tracking-icon status-intransit" id="I16">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 16<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    13 Avant 2003, les pays de Bosnie, Croatie, Slovénie, Macédoine, Monténégro et Serbie 
+                    étaient regroupés sous le nom d'un Etat. De quel Etat s'agissait-il ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q16" id="r69">a) Bulgarie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q16" id="r70">b) Tchécoslovaquie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q16" id="r71">c) Kosovo
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q16" id="r72">d) Yougoslavie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q16" id="r77">e) Russie
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI17">
+                  <div class="tracking-icon status-intransit" id="I17">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 17<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la méthode d’autosuggestion basée sur la persuasion par la répétition ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q17" id="r78">a) Coué
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q17" id="r79">b) Cauet
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q17" id="r80">c) Couderc
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q17" id="r81">d) Courbet
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q17" id="r82">e) Courbet
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI18">
+                  <div class="tracking-icon status-intransit" id="I18">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 18<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    L’armée de quel pays est-elle également appelée « Tsahal »
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q18" id="r83">a) Etats-Unis
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q18" id="r84">b) Egypte
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q18" id="r85">c) Israël
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q18" id="r86">d) Chine
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q18" id="r87">e) Allemagne
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI19">
+                  <div class="tracking-icon status-intransit" id="I19">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 19<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Nicolas MADURO est le président de quel pays ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q19" id="r88">a) Nicaragua
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q19" id="r89">b) Bolivie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q19" id="r90">c) Salvador
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q19" id="r91">d) Venezuela
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q19" id="r91">e) Mexique
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI20">
+                  <div class="tracking-icon status-intransit" id="I20">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 20<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Quel mot désigne l'élevage des oiseaux ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q20" id="r92">a) L'ostréiculture
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q20" id="r93">b) La cuniculiculture
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q20" id="r94">c) L'apiculture
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q20" id="r95">d) L'aviculture
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q20" id="r96">e) La pisciculture
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI21">
+                  <div class="tracking-icon status-intransit" id="I21">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 21<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la ville la plus peuplée parmi celles citées ci-dessous ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q21" id="r97">a) Buenos Aires
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q21" id="r98">b) New York
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q21" id="r99">c) Tokyo
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q21" id="r100">d) Le Caire
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q21" id="r101">e) Lagos
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI22">
+                  <div class="tracking-icon status-intransit" id="I22">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 22<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la capitale du Danemark ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q22" id="r102">a) Stockholm
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q22" id="r103">b) Helsinki
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q22" id="r104">c) Copenhague
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q22" id="r105">d) Oslo
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q22" id="r106">e) Amsterdam
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI23">
+                  <div class="tracking-icon status-intransit" id="I23">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 23<span>(02 points)</span></div>
+                  <div class="tracking-content">
+                    Quel pays possède l’arme nucléaire ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q23" id="r107">a) Guinée
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q23" id="r108">b) Luxembourg
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q23" id="r109">c) France
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q23" id="r110">d) Nigeria
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q23" id="r111">e) Cameroun
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI24">
+                  <div class="tracking-icon status-intransit" id="I24">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 24<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la bonne orthographe pour designer ce synonyme de « excepté » ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q24" id="r112">a) ormi
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q24" id="r113">b) ormit
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q24" id="r114">c) hormi
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q24" id="r115">d) hormis
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q24" id="r116">e) hormit
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI25">
+                  <div class="tracking-icon status-intransit" id="I25">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 25<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    QUne des séries est fausse ; laquelle ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q25" id="r117">a) je rends, tu rends, il rend
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q25" id="r118">b) je vends, tu vends, il vend
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q25" id="r119">c) je prends, tu prends, il prend
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q25" id="r120">d) je crainds, tu crainds, il craind
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q25" id="r121">e) je couds, tu couds, il coud
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI26">
+                  <div class="tracking-icon status-intransit" id="I26">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 26<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la bonne orthographe ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q26" id="r122">a) goulumment
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q26" id="r123">b) goûllument
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q26" id="r124">c) goulûment
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q26" id="r125">d) goullument
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q26" id="r126">e) goulûmment
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI27">
+                  <div class="tracking-icon status-intransit" id="I27">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 27<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    De quelle forme est la phrase « Attends- moi, attends-moi ! » ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q27" id="r127">a) déclarative
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q27" id="r128">b) impérative
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q27" id="r129">c) interrogative
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q27" id="r130">d) exclamative
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q27" id="r131">e) passive
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI28">
+                  <div class="tracking-icon status-intransit" id="I28">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 28<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la bonne orthographe de ce synonyme de « inhérent » ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q28" id="r132">a) intrinsecque
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q28" id="r133">b) intrinsèque
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q28" id="r134">c) aintrinsec
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q28" id="r135">d) intrinsec
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q28" id="r136">e) intrainsèque
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI29">
+                  <div class="tracking-icon status-intransit" id="I29">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 29<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est bonne orthographe ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q29" id="r137">a) elle s’est apperçue de sa bêtise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q29" id="r138">b) elle s’est aperçue de sa bêtise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q29" id="r139">c) elle c’est aperçue de sa bêtise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q29" id="r140">d) elle s’est aperçu de sa bêtise
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q29" id="r141">e) elle s’est apperçu de sa bêtise
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI30">
+                  <div class="tracking-icon status-intransit" id="I30">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 30<span>(01 points)</span></div>
+                  <div class="tracking-content"> 
+                    Compléter avec le bon mot l’expression « s’en tirer …. et sauf » :
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q30" id="r142">a) sein
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q30" id="r143">b) seing
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q30" id="r144">c) saint
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q30" id="r145">d) sain
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q30" id="r146">e) ceint
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI31">
+                  <div class="tracking-icon status-intransit" id="I31">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 31<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Quelle est la phrase correctement orthographiée ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q31" id="r147">a) son attitude provoquante a choqué l’assemblée
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q31" id="r148">b) son atitude provoquante a choqué l’assemblée
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q31" id="r149">c) son attitude provocante a choquée l’assemblée
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q31" id="r150">d) son attitude provoccante a choqué l’assemblée
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q31" id="r151">e) son attitude provocante a choqué l’assemblée
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI32">
+                  <div class="tracking-icon status-intransit" id="I32">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 32<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Une des phrases suivantes comporte une faute, laquelle ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q32" id="r152">a) Les courses que j’ai fait
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q32" id="r153">b) Elle s’est faite à cette nouvelle vie
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q32" id="r154">c) Elle s’est fait sa jupe elle même
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q32" id="r155">d) La robe de mariée qu’elle s’est fait faire
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q32" id="r156">e) Il s’est fait faire de nouvelles lunettes
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               <div class="tracking-item" id="TI33">
+                  <div class="tracking-icon status-intransit" id="I33">
+                     <svg class="svg-inline--fa fa-circle fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path>
+                     </svg>
+                     <!-- <i class="fas fa-circle"></i> -->
+                  </div>
+                  <div class="tracking-date">Q 33<span>(01 points)</span></div>
+                  <div class="tracking-content">
+                    Lequel de ces adverbes n’est pas un adverbe de négation ?
+                        <span>
+                            <ul class="list-group checked-list-box">
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q33" id="r157">a) guère
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q33" id="r158">b) sans doute
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q33" id="r159">c) point
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q33" id="r160">d) rien
+                                </label>
+                                <label class="list-group-item">
+                                    <input type="radio" name="Q33" id="r161">e) jamais
+                                </label>
+                            </ul>
+                        </span>
+                    </div>
+               </div>
+               
+            <div class="footerQuiz">
+                <button type="button" id="submtQuiz" class="btnSubmit" data-toggle="modal" data-target="#myModal">Envoyez</button>
+            </div>
+            <!-- Modal -->
+            <div id="printModal">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <div class="row p-5">
+                                    <div class="col-md-6">
+                                        <img src="../asset/icones/IAM.png" alt="logo_IAM">
+                                    </div>
+            
+                                    <div class="col-md-6 text-right">
+                                        <p class="font-weight-bold mb-1">Dakar</p>
+                                        <p class="text-muted">Fait le, 23 / 10 / 2019</p>
+                                    </div>
+                                </div>
+            
+                                <hr class="my-5">
+            
+                                <div class="row pb-5 p-5">
+                                    <div class="col-md-6">
+                                        <p class="font-weight-bold mb-4">Informations Etudiant(e)</p>
+                                        <p class="mb-1">Mohamed SOW</p>
+                                        <p>Informatique</p>
+                                        <p class="mb-1">Licence 1</p>
+                                        <p class="mb-1">Yoff Virage</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-offset-2 col-md-8">
+                                        <h2 id="felicitation"></h2>
+                                    </div>
+                                </div>
+            
+                                <div class="row p-5">
+                                    <div class="col-md-12">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-0 text-uppercase small font-weight-bold">Mathématiques et Logique</th>
+                                                    <th class="border-0 text-uppercase small font-weight-bold">Culture Générale et Actualités</th>
+                                                    <th class="border-0 text-uppercase small font-weight-bold">Expression Ecrite Français</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td id="mathLgq"></td>
+                                                    <td id="cltrGActl"></td>
+                                                    <td id="fr"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" 
+                            id="printBtn"
+                            class="btn btn-finish btn-fill btn-success btn-wd btn-sm" 
+                            onclick="divPrint();">
+                                Imprimer
+                        </button>
+                        <script type="text/javascript">
+                            function divPrint() {
+                                document.getElementById("myModal").classList.add("printSection");
+                                window.print();
+                                document.getElementById("printBtn").css('display', 'none');
+                            }
+                        </script>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+         </div>
+      </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="../js/modelQuiz.js"></script>
+</body>
+</html>
