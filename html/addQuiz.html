@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="../asset/icones/IAM.png">
+	<link rel="icon" type="image/png" href="../asset/icones/IAM.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+            crossorigin="anonymous">
+    
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/addQuiz.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,600,700,800,800i,900&display=swap" 
+            rel="stylesheet">
+    <title>Add Quiz</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header_flr">
+        <div class="header__bg_flr"></div>
+        <div class="header__logo">
+            <img src="../asset/img/IAM.png" alt="Logo_IAM">
+        </div>
+        <h1 class="header__title">_> Ajouter un Quiz</h1>
+        <div class="header__log">
+           <svg class="header__log--icon" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"></path>
+           </svg>
+           <p class="header__log--text connexion">Admin</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form action="DetailS" method="Post">
+            <div class="container-fluid">
+                <section class="container">
+                    <div class="container-page">				
+                        <div class="col-md-12">
+                            <h3><font size="10%">Ajouter des détails du quiz</font></h3>
+
+                            <div class="form-group col-lg-12">
+                                <label>Nom du Quiz :</label>
+                                <input type="text" name="cname" class="form-control" placeholder="Enter Course Name" required="Plz Enter">
+                            </div>
+                            
+                            <div class="form-group col-lg-12">
+                                <label>Quesion :</label>
+                                <input type="text" name="intro" class="form-control" placeholder="Votre question ici" required="Plz Enter">
+                            </div>
+                            
+                            <div class="form-group col-lg-12">
+                                <label>réponse 1 :</label>
+                                <input type="text" name="heading1" class="form-control" placeholder="Element de réponse" required="Plz Enter">
+                            </div>
+                            
+                            <div class="form-group col-lg-12">
+                                <label>réponse 2 :</label>
+                                <input type="text" name="heading2" class="form-control" placeholder="Element de réponse" required="Plz Enter">
+                            </div>
+                            
+                            <div class="form-group col-lg-12">
+                                <label>réponse 3:</label>
+                                <input type="text" name="example" class="form-control" placeholder="Element de réponse" required="Plz Enter">
+                            </div>			
+
+                            <div class="form-group col-lg-12">
+                                <label>File Upload :</label>
+                                <input type="file" name="file" value="Submit Image" required="Plz Insert Image">
+                            </div>			
+                            
+                        <div class="form-group col-md-12">
+                            <center><button type="submit" class="btn btn-primary">Enregistrer</button></center>
+                        </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                </section>
+            </div>
+        </form> 
+    </div>
+
+    <script src="../js/addQuiz.js"></script>
+</body>
+</html>

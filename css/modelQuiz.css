@@ -680,5 +680,13 @@ table{
   pointer-events: none;
 }
 
+/**
+.check {
+	width: 30px; height: 30px;
+	position: absolute;
+	border-radius: 50%;
+	transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+**/
 
 
