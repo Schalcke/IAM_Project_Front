@@ -188,23 +188,6 @@ $('#submtQuiz').click(
     } 
 );
 
-/** 
-function math_and_lgq() {
-    $('#submtQuiz').click(
-        function () {
-            responses = {
-                r1: 3,
-                r2: 5,
-                r3: 2
-            }
-            console.log(responses.r1);
-        }
-    )
-}
-
-math_and_lgq()
-*/
-
 // Stylise Icone cercle onClick input
 function UX_Style(){
   $("input").click(
@@ -259,15 +242,24 @@ var x = setInterval(function() {
   document.getElementById("rbr").innerHTML = seconds;
 
   $( "brand" ).addClass( "sonar-wave" );
+  
+  /**
+  if (seconds < 30) {
+      $('.timer-button').append('<style>.timer-button:before{background-color:red !important;}</style>');
+      $('.timer-button').append('<style>.timer-button:after{background-color:red !important;}</style>');
+  } else {
+      $('.timer-button').append('<style>.timer-button:before{background-color:green !important;}</style>');
+      $('.timer-button').append('<style>.timer-button:after{background-color:green !important;}</style>');
+  }
+ */
+
+ 
+var timer = $('.timer-button:after');
+console.log(timer);
+timer.css({'background' : 'red'});
 
   if (seconds < 30) {
-    //  $('.video-play-button')before.css('background-color', 'red');
-      $('.video-play-button').append('<style>.video-play-button:before{background-color:red !important;}</style>');
-      $('.video-play-button').append('<style>.video-play-button:after{background-color:red !important;}</style>');
-  } else {
-      $('.video-play-button').append('<style>.video-play-button:before{background-color:green !important;}</style>');
-      $('.video-play-button').append('<style>.video-play-button:after{background-color:green !important;}</style>');
-  }
+  } 
 
   // If the count down is finished, write some text
   if (distance < 0) {

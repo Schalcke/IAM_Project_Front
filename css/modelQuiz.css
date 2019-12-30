@@ -2,26 +2,49 @@
     font-family: 'Montserrat' ,serif;
 }
 
-/** Print quiz result **/
-@media screen {
-  .printSection {
-      display: none;
+/* ===============
+  ** QUIZ HEADER **  
+  =============== */
+  .offset {
+    margin-top: 0;
+    padding-top: 270px;
+    text-align: center;
+    transition: .3s;
   }
-}
-
-@media print {
-  body * {
-      visibility:hidden;
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    font-weight: bold;
+    text-align: center;
+  /*  background-color: "#303432"; */
+    background: -webkit-linear-gradient(left, #4A9328, #14601E);  
+    transition: .3s;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
-  .printSection, .printSection * {
-      visibility:visible;
+  .header.small {
+    height: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
-  .printSection {
-      position:absolute;
-      left:0;
-      top:0;
+  .header.small ~ .offset {
+    padding-top: 140px;
   }
-}
+  .header.small .header_title {
+    padding-top: 20px;
+    font-size: 20px;
+    text-shadow: none;
+    color: #fff;
+  }
+  
+  .header_title{
+    margin: 0;
+    padding-top: 80px;
+    font-size: 50px;
+    text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    color: #fff;
+  }
 
 a{
     color: #fff;
@@ -481,50 +504,10 @@ span::before, span::after{
     margin-bottom: 0px;
 }
 
-/* QUIZ HEADER */
-.offset {
-  margin-top: 0;
-  padding-top: 270px;
-  text-align: center;
-  transition: .3s;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  height: 30vh;
-  font-weight: bold;
-  text-align: center;
-/*  background-color: "#303432"; */
-  background: -webkit-linear-gradient(left, #4A9328, #14601E);  
-  transition: .3s;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-}
-.header.small {
-  height: 70px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-.header.small ~ .offset {
-  padding-top: 140px;
-}
-.header.small .header_logo {
-  padding-top: 20px;
-  font-size: 20px;
-  text-shadow: none;
-  color: #fff;
-}
-
-.header_logo{
-  margin: 0;
-  padding-top: 80px;
-  font-size: 50px;
-  text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
-  transition: .3s;
-  color: #fff;
-}
-
-/* ANCRE TOP BTN */
-.video-play-button {
+/* ===============
+  ** TIMER **  
+  =============== */
+.timer-button {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -542,7 +525,7 @@ span::before, span::after{
   border-radius: 50%;
   padding: 9px 24px 18px 28px;
 }
-.video-play-button:before {
+.timer-button:before {
   content: "";
   position: absolute;
   z-index: 0;
@@ -557,7 +540,7 @@ span::before, span::after{
   animation: pulse-border 1500ms ease-out infinite;
 }
 
-.video-play-button:after {
+.timer-button:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -574,7 +557,7 @@ span::before, span::after{
 }
 
 
-.video-play-button span {
+.timer-button span {
   /*
   display: block;
   position: relative;
@@ -604,15 +587,72 @@ span::before, span::after{
 }
 }
 
+.red{
+  background-color: red !important;
+}
 
+.green{
+  background-color: green !important;
+}
 
+/* ===============
+  ** ENCRE BTN **  
+  =============== */
+.encre_btn {
+  width: 40px;
+  height: 90px;
+  display: block;
+  position: fixed;
+  z-index: 555;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 30px;
+  color: #B20E10;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: 28px;
+}
 
-/* Résult Page */
+.encre_btn:hover{
+  color: #B20E10;
+}
+
+.encre_btn #brand {
+  position: relative;
+  vertical-align: middle;
+  font-size: 28px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===============
+  ** RESULT PAGE**  
+  =============== */
+
+  /** Print quiz result **/
+@media screen {
+  .printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+      visibility:hidden;
+  }
+  .printSection, .printSection * {
+      visibility:visible;
+  }
+  .printSection {
+      position:absolute;
+      left:0;
+      top:0;
+  }
+}
+
 #felicitation{
   text-align: center;
   color: #14601E;
-  margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 table{
@@ -649,35 +689,6 @@ table{
 .table tr td{
   border: none;
   border: 1px solid #ddd;
-}
-
-/* TIMER */
-.made-with-mk {
-  width: 40px;
-  height: 90px;
-  display: block;
-  position: fixed;
-  z-index: 555;
-  bottom: 40px;
-  right: 40px;
-  border-radius: 30px;
-  color: #B20E10;
-  cursor: pointer;
-  padding: 10px 12px;
-  font-size: 28px;
-}
-
-.made-with-mk:hover{
-  color: #B20E10;
-}
-
-
-.made-with-mk #brand {
-  position: relative;
-  vertical-align: middle;
-  font-size: 28px;
-  z-index: -1;
-  pointer-events: none;
 }
 
 /**
